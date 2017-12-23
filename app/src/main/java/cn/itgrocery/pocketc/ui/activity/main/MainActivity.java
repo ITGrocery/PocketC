@@ -1,17 +1,29 @@
 package cn.itgrocery.pocketc.ui.activity.main;
 
-import android.app.Activity;
-import android.os.Bundle;
-
-import java.util.ArrayList;
-
 import cn.itgrocery.pocketc.R;
+import cn.itgrocery.pocketc.base.BaseActivity;
+import cn.itgrocery.pocketc.base.contract.main.MainContract;
+import cn.itgrocery.pocketc.presenter.main.MainPresenter;
 
-public class MainActivity extends Activity {
+public class MainActivity extends BaseActivity<MainPresenter> implements MainContract.View{
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected void initEventAndData() {
+        mPresenter.testDagger();
+    }
+
+    @Override
+    protected int getLayoutId() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    protected void initInject() {
+        getActivityComponent().inject(this);
+    }
+
+    @Override
+    public void showMessage(String info) {
+        showErrorMsg(info);
     }
 }
