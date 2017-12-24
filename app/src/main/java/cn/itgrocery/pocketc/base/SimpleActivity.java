@@ -5,17 +5,17 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.SupportActivity;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import cn.itgrocery.pocketc.app.App;
+import me.yokeyword.fragmentation.SupportActivity;
 
 /**
  * Created by xc on 2017/12/23.
  */
 
-public abstract class SimpleActivity extends SupportActivity{
+public abstract class SimpleActivity extends SupportActivity {
 
     protected Activity mContext;
     private Unbinder mUnbinder;

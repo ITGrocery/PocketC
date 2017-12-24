@@ -3,9 +3,8 @@ package cn.itgrocery.pocketc.di.component;
 import android.app.Activity;
 
 import cn.itgrocery.pocketc.di.module.ActivityModule;
-import cn.itgrocery.pocketc.di.module.AppModule;
 import cn.itgrocery.pocketc.di.scope.ActivityScope;
-import cn.itgrocery.pocketc.ui.activity.main.MainActivity;
+import cn.itgrocery.pocketc.ui.main.activity.MainActivity;
 import dagger.Component;
 
 /**
