@@ -46,5 +46,7 @@ dependencies {
     implementation 'com.aurelhubert:ahbottomnavigation:2.+'
     //https://github.com/YoKeyword/Fragmentation
     implementation 'me.yokeyword:fragmentation:1.+'
+    //https://github.com/rengwuxian/MaterialEditText
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
 
 }

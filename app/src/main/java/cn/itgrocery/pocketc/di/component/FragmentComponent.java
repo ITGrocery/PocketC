@@ -10,7 +10,7 @@ import dagger.Component;
  * Created by xc on 2017/12/24.
  */
 @FragmentScope
-@Component(dependencies = AppComponent.class,modules = FragmentModule.class)
+@Component(dependencies = {AppComponent.class}, modules = {FragmentModule.class})
 public interface FragmentComponent {
 
     Activity getActivity();
