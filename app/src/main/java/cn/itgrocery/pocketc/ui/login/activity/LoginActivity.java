@@ -1,8 +1,5 @@
 package cn.itgrocery.pocketc.ui.login.activity;
 
-import android.os.Bundle;
-import android.app.Activity;
-
 import cn.itgrocery.pocketc.R;
 import cn.itgrocery.pocketc.base.SimpleActivity;
 

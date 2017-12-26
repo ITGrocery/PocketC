@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="container_vertical_margin">24dp</dimen>
+    <dimen name="container_horizontal_margin">24dp</dimen>
+
+    <dimen name="item_vertical_margin">16dp</dimen>
+    <dimen name="item_horizontal_margin">24dp</dimen>
+
+    <!--字体大小-->
+    <dimen name="main_body_text_size">14sp</dimen>
+    <dimen name="small_label_text_size">16sp</dimen>
+    <dimen name="large_label_text_size">24sp</dimen>
+</resources>

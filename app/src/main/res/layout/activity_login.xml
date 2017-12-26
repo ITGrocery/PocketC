@@ -1,9 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/container_vertical_margin"
+    android:layout_marginRight="@dimen/container_vertical_margin"
+    android:layout_marginTop="@dimen/container_horizontal_margin"
+    android:layout_marginBottom="@dimen/container_horizontal_margin"
+    android:orientation="vertical"
     tools:context="cn.itgrocery.pocketc.ui.login.activity.LoginActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:textSize="@dimen/large_label_text_size"
+        android:text="手机快捷登录"
+        android:id="@+id/al_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/container_vertical_margin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/input_phone_number"
+            android:layout_weight="1"
+            android:hint="请输入手机号码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/item_horizontal_margin"
+            android:id="@+id/input_identitfy_code"
+            android:text="获取验证码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:hint="请输入验证码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="@dimen/container_vertical_margin"
+        android:id="@+id/btn_login"
+        android:text="登录"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:hint="未注册的手机号登录时将自动注册"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
