@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="8dp"
+    android:layout_marginRight="@dimen/container_horizontal_margin"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_topic_preview_sender_photo"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_cloud"
+                android:layout_width="16dp"
+                android:layout_height="16dp" />
+
+            <TextView
+                android:id="@+id/tv_topic_preview_sender_name"
+                android:textSize="@dimen/small_label_text_size"
+                android:text="今日推荐"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_topic_preview_community_name"
+                android:layout_marginLeft="@dimen/container_horizontal_margin"
+                android:hint="合集"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_topic_preview_topic_send_time"
+            android:layout_alignParentRight="true"
+            android:hint="两天前"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:src="@color/color_tab_1"
+        android:id="@+id/tv_topic_preview_cover"
+        android:layout_marginTop="@dimen/item_vertical_margin"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+
+    <TextView
+        android:id="@+id/tv_topic_preview_content"
+        android:layout_marginTop="@dimen/item_vertical_margin"
+        android:text="第四个这儿有点问题，你的原文是“把图片按比例扩大/缩小到View的宽度，居上、居中、居下显示”，官方api的解释是“Compute a scale that will maintain the original src aspect ratio, but will also ensure that src fits entirely inside dst. At least one axis (X or Y) will fit exactly.”，我的理解是，在现有view范围内，按照原有宽高比，尽可能多的将imageview显示出来。不是你这儿说的扩大/缩小到View的宽度。"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/ic_network"
+                android:layout_width="16dp"
+                android:layout_height="16dp" />
+            <TextView
+                android:id="@+id/tv_topic_preview_watch_num"
+                android:text="142132"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/ic_network"
+                android:layout_width="16dp"
+                android:layout_height="16dp" />
+            <TextView
+                android:id="@+id/tv_topic_preview_discuss_num"
+                android:text="142132"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/ic_network"
+                android:layout_width="16dp"
+                android:layout_height="16dp" />
+            <TextView
+                android:id="@+id/tv_topic_preview_like_num"
+                android:text="142132"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ImageView
+            android:src="@mipmap/ic_help"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

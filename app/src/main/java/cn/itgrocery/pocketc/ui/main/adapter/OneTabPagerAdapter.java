@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.itgrocery.pocketc.ui.main.fragment.TestFragment;
+import cn.itgrocery.pocketc.ui.main.fragment.onetab.HotTopicsFragment;
 
 /**
  * Created by chenxl on 2017/12/27.
@@ -21,7 +22,7 @@ public class OneTabPagerAdapter extends FragmentPagerAdapter {
 
     public OneTabPagerAdapter(FragmentManager fm) {
         super(fm);
-        fragmentList.add(TestFragment.newInstance(labels[0]));
+        fragmentList.add(HotTopicsFragment.newInstance());
         fragmentList.add(TestFragment.newInstance(labels[1]));
     }
 

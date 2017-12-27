@@ -1,5 +1,7 @@
 package cn.itgrocery.pocketc.ui.main.activity;
 
+import android.support.design.widget.FloatingActionButton;
+
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationAdapter;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
@@ -20,6 +22,8 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainCon
     AHBottomNavigationViewPager viewPager;
     @BindView(R.id.bottom_navigation)
     AHBottomNavigation bottomNavigation;
+    @BindView(R.id.floating_action_button)
+    FloatingActionButton floatingActionButton;
 
     @Override
     protected void initEventAndData() {
@@ -28,6 +32,7 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainCon
         ahBottomNavigationAdapter.setupWithBottomNavigation(bottomNavigation);
 
         bottomNavigation.setTitleState(AHBottomNavigation.TitleState.ALWAYS_SHOW);
+        bottomNavigation.manageFloatingActionButtonBehavior(floatingActionButton);
 
         viewPager.setAdapter(new MainViewPagerAdapter(getSupportFragmentManager()));
 
