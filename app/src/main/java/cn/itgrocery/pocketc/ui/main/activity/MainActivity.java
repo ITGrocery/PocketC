@@ -1,6 +1,7 @@
 package cn.itgrocery.pocketc.ui.main.activity;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
+import com.aurelhubert.ahbottomnavigation.AHBottomNavigationAdapter;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationViewPager;
 
@@ -22,17 +23,12 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainCon
 
     @Override
     protected void initEventAndData() {
-//        mPresenter.testDagger();
-        AHBottomNavigationItem item1 = new AHBottomNavigationItem(R.string.bottom_navigation_label_one,
-                R.mipmap.ic_home,R.color.color_tab_1);
-        AHBottomNavigationItem item2 = new AHBottomNavigationItem(R.string.bottom_navigation_label_two,
-                R.mipmap.ic_flag,R.color.color_tab_1);
-        AHBottomNavigationItem item3 = new AHBottomNavigationItem(R.string.bottom_navigation_label_three,
-                R.mipmap.ic_message,R.color.color_tab_1);
-        AHBottomNavigationItem item4 = new AHBottomNavigationItem(R.string.bottom_navigation_label_four,
-                R.mipmap.ic_volume,R.color.color_tab_1);
-        bottomNavigation.addItems(Arrays.asList(item1,item2,item3,item4));
+
+        AHBottomNavigationAdapter ahBottomNavigationAdapter = new AHBottomNavigationAdapter(this,R.menu.bottom_navigation_bottom);
+        ahBottomNavigationAdapter.setupWithBottomNavigation(bottomNavigation);
+
         bottomNavigation.setTitleState(AHBottomNavigation.TitleState.ALWAYS_SHOW);
+
         viewPager.setAdapter(new MainViewPagerAdapter(getSupportFragmentManager()));
 
         bottomNavigation.setOnTabSelectedListener(new AHBottomNavigation.OnTabSelectedListener() {

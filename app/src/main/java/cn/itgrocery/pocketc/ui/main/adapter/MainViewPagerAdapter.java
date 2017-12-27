@@ -22,6 +22,7 @@ public class MainViewPagerAdapter extends FragmentPagerAdapter {
         fragments.add(SimpleFragment.newInstance("title_2"));
         fragments.add(SimpleFragment.newInstance("title_3"));
         fragments.add(SimpleFragment.newInstance("title_4"));
+        fragments.add(SimpleFragment.newInstance("title_5"));
     }
 
     @Override

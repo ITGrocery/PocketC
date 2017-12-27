@@ -16,14 +16,14 @@ import cn.itgrocery.pocketc.util.SnackbarUtil;
 public class LoginActivity extends SimpleActivity {
 
     @BindView(R.id.input_phone_number)
-    private MaterialEditText inputPhoneNumber;
+    MaterialEditText inputPhoneNumber;
     @BindView(R.id.input_identitfy_code)
-    private MaterialEditText inputIdentitfyCode;
+    MaterialEditText inputIdentitfyCode;
     @BindView(R.id.get_identitfy_code)
-    private EditText getIdentitfyCode;
+    EditText getIdentitfyCode;
 
     @BindView(R.id.btn_login)
-    private Button btnLogin;
+    Button btnLogin;
 
     //倒计时
     private CountDownTimer countDownTimer;
