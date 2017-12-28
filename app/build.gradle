@@ -48,5 +48,10 @@ dependencies {
     implementation 'me.yokeyword:fragmentation:1.+'
     //https://github.com/rengwuxian/MaterialEditText
     implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.+'
+    implementation 'com.squareup.retrofit2:converter-gson:2.+'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.+'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.+'
 
 }

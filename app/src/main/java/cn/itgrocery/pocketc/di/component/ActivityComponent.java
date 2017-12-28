@@ -4,6 +4,7 @@ import android.app.Activity;
 
 import cn.itgrocery.pocketc.di.module.ActivityModule;
 import cn.itgrocery.pocketc.di.scope.ActivityScope;
+import cn.itgrocery.pocketc.model.http.RetrofitHelper;
 import cn.itgrocery.pocketc.ui.main.activity.MainActivity;
 import dagger.Component;
 
