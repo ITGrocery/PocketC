@@ -43,6 +43,8 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainCon
                 return true;
             }
         });
+
+        mPresenter.testRetrofit2();
     }
 
     @Override

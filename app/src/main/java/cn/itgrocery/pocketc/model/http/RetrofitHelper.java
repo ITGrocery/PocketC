@@ -6,6 +6,8 @@ import javax.inject.Inject;
 
 import cn.itgrocery.pocketc.model.http.api.TestApi;
 import cn.itgrocery.pocketc.model.pojo.MyJoke;
+import cn.itgrocery.pocketc.util.RxUtil;
+import io.reactivex.Flowable;
 import io.reactivex.Observable;
 
 /**
@@ -21,7 +23,9 @@ public class RetrofitHelper {
         this.testApi = testApi;
     }
 
-    public Observable<List<MyJoke>> fetchJokes(){
-        return testApi.getData();
+    public Flowable<List<MyJoke>> fetchJokes(){
+        return testApi.getData().compose(RxUtil.<List<MyJoke>>rxSchedulerHelper());
     }
+
+
 }

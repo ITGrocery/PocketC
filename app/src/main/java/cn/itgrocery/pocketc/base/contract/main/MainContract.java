@@ -15,5 +15,7 @@ public interface MainContract {
 
     interface Presenter extends BasePresenter<View>{
         void testDagger();
+
+        void testRetrofit2();
     }
 }
